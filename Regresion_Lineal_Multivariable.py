@@ -39,7 +39,8 @@ def Ajuste_lineal_multi(df, df_p, tit, y_exp=empty):
 
     # Presicion del modelo:
     if empty == False :
-        presicion=regresion.score(df_p.values, y_exp.values)*100
+        presicion = regresion.score(df_p.values, y_exp.values)*100
+    presicion = 'No se puede calcular la presicion'
 
     # Predicciones:
     y_p = regresion.predict(df_p[columnas].values)
