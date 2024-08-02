@@ -70,7 +70,7 @@ def Ajuste_lineal_completo(df, titulo, x_p=no_pred, dx_p=no_pred, tipo_ajuste=[T
    Incert_xy, Incert_x, No_Incert = tipo_ajuste
    
    # Auxiliares:
-   x_fit = linspace(min(df.x), max(df.x), 1000, True)
+   x_fit = linspace(min(df.iloc[:,0]), max(df.iloc[:,0]), 1000, True)
    Lista_df = []
 
    #------------------------------------------------------------------------------
